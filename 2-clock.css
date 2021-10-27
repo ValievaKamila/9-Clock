@@ -1,0 +1,133 @@
+
+* {
+    background-color: #f6f6f6;
+}
+
+#clock {
+    display: block;
+    margin: auto;
+    width: 250px;
+    height: 250px;
+}
+
+#circle {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 3px solid rgb(57, 179, 179);
+}
+
+#point {
+    position: relative;
+    top:-130px;
+    right: -125px;
+    width: 10px; 
+    height: 10px;
+    border-radius: 50%;
+    background: rgb(57, 179, 179);
+    }
+
+#hour-hand {
+    position: relative;
+    top:-226px;
+    right: -128px;
+    width: 3px;
+    height: 91px;
+    transform-origin: bottom;
+    animation-name: rotatationHourHand;
+    animation-duration: 72s;
+    animation-iteration-count:infinite;
+    animation-timing-function: linear;
+    background: rgb(57, 179, 179);
+}
+
+#second-hand {
+    position: relative;
+    width: 3px;
+    height: 108px;
+    top:-334px;
+    right: -128px;
+    transform-origin: bottom;
+    animation-name: rotatationSecondHand;
+    animation-duration: 6s;
+    animation-iteration-count:infinite;
+    background: rgb(57, 179, 179);
+}
+
+@keyframes rotatationHourHand {
+    8.3% {
+        transform: rotate(30deg);
+    }
+    16.6% {
+        transform: rotate(60deg);
+    }
+    24.9% {
+        transform: rotate(90deg);
+    }
+    33.2% {
+        transform: rotate(120deg);
+    }
+    41.5% {
+        transform: rotate(150deg);
+    }
+    49.8% {
+        transform: rotate(180deg);
+    }
+    58.1% {
+        transform: rotate(210deg);
+    }
+    66.4% {
+        transform: rotate(240deg);
+    }
+    74.7% {
+        transform: rotate(270deg);
+    }
+    83% {
+        transform: rotate(300deg);
+    }
+    91.3% {
+        transform: rotate(330deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotatationSecondHand {
+    8.3% {
+        transform: rotate(30deg);
+    }
+    16.6% {
+        transform: rotate(60deg);
+    }
+    24.9% {
+        transform: rotate(90deg);
+    }
+    33.2% {
+        transform: rotate(120deg);
+    }
+    41.5% {
+        transform: rotate(150deg);
+    }
+    49.8% {
+        transform: rotate(180deg);
+    }
+    58.1% {
+        transform: rotate(210deg);
+    }
+    66.4% {
+        transform: rotate(240deg);
+    }
+    74.7% {
+        transform: rotate(270deg);
+    }
+    83% {
+        transform: rotate(300deg);
+    }
+    91.3% {
+        transform: rotate(330deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
